@@ -24,7 +24,7 @@ public class ContaBancariaTest {
     void deveRetornarEstadoAnterior() {
         ContaBancaria contaBancaria = new ContaBancaria();
         contaBancaria.setEstado(ContaBancariaEstadoAtiva.getInstance());
-        contaBancaria.setEstado(ContaBancariaeEstadoCongelada.getInstance());
+        contaBancaria.setEstado(ContaBancariaEstadoCongelada.getInstance());
         contaBancaria.setEstado(ContaBancariaEstadoEncerrada.getInstance());
         contaBancaria.setEstado(ContaBancariaEstadoTransferida.getInstance());
         contaBancaria.restauraEstado(2);
@@ -38,7 +38,7 @@ public class ContaBancariaTest {
             contaBancaria.restauraEstado(0);
             fail();
         } catch (IllegalArgumentException e) {
-            assertEquals("Índice inválido", e.getMessage());
+            assertEquals("Indice invalido", e.getMessage());
         }
     }
 }

@@ -16,7 +16,7 @@ public class ContaBancaria {
 
     public void restauraEstado(int indice) {
         if (indice < 0 || indice > this.memento.size() - 1) {
-            throw new IllegalArgumentException("Índice inválido");
+            throw new IllegalArgumentException("Indice invalido");
         }
         this.estado = this.memento.get(indice);
     }
